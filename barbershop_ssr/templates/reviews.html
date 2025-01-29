@@ -1,0 +1,12 @@
+{% from 'review.html' import review %}
+
+{% macro reviews(content, class="") %}
+<!--    <div class="{{ class }}">{{ content }}</div>-->
+<div class=" {{ class }}">
+    <div class="text-2xl font-bold">Customer Reviews</div>
+    <div class="flex flex-row gap-3 overflow-x-auto pl-px">
+        {{ review() }}
+        {{ review() }}
+    </div>
+</div>
+{% endmacro %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% from 'servicesPreview.html' import servicesPreview %}
+{% from 'info.html' import info %}
+{% from 'reviews.html' import reviews %}
+
+{% block content %}
+<div class="flex flex-col gap-7">
+    {{ servicesPreview() }}
+    {{ reviews() }}
+    {{ info() }}
+</div>
+{% endblock %}

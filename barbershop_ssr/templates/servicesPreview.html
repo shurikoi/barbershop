@@ -1,0 +1,12 @@
+{% from 'servicePreview.html' import servicePreview %}
+
+{% macro servicesPreview(content, class="") %}
+<!--    <div class="{{ class }}">{{ content }}</div>-->
+<div class=" {{ class }}">
+    <div class="text-2xl font-bold">Our Services</div>
+    <div class="flex flex-row gap-3 overflow-x-auto pl-px">
+        {{ servicePreview() }}
+        {{ servicePreview() }}
+    </div>
+</div>
+{% endmacro %}
